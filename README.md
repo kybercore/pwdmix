@@ -1,4 +1,4 @@
-A simple CLI generator for strong passwords. Written in Go's stdlib with cryptographically secure RNG. Provides multiple options to customize a password and robust defaults.
+A simple CLI generator for strong passwords. Written in Go's stdlib with cryptographically secure RNG. Provides multiple options to customize a password. It shadows the generated password in memory after execution.
 
 ![pwdmix-demo](https://github.com/parsec501/pwdmix/assets/105080989/e105ab71-e2c4-444d-a6d6-5d0ed54a9d9d)
 

@@ -28,7 +28,7 @@ func PasswordGenerator(opts *cli.Options) ([]byte, error) {
 	return passBytes, nil
 }
 
-// createCharsets creates the charsets based on the options passed in
+// createCharsets creates the password generator's charset based on the options passed in
 func createCharsets(opts *cli.Options) string {
 	var charsets string
 	if opts.GetMode() == "n" {
