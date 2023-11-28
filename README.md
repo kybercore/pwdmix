@@ -4,7 +4,7 @@ A simple CLI generator for strong passwords. Written in Go's stdlib with cryptog
 
 ### Usage (`--help`)
 
-There is three options: password length, password mode (alphanumeric, numeric or alphabetic) and special characters. By default, password-gen will generate a 12 character alphanumeric password with special characters.
+There is three options: password length, password mode (alphanumeric, numeric or alphabetic) and special characters. By default, pwdmix will generate a 12 character alphanumeric password without special characters.
 
 To customize these options, you have three flags: -l (length), -m (mode) and -s (special chars).
 
