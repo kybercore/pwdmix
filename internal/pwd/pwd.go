@@ -7,7 +7,7 @@ import (
 )
 
 // PasswordGenerator generates a password based on the options passed in
-func PasswordGenerator(opts *cli.Options) ([]byte, error) {
+func PasswordGenerator(opts *cli.Options) (*[]byte, error) {
 	passBytes := make([]byte, opts.GetLength())
 
 	_, err := rand.Read(passBytes)
@@ -25,7 +25,7 @@ func PasswordGenerator(opts *cli.Options) ([]byte, error) {
 		}
 		passBytes[i] = charsets[index.Int64()]
 	}
-	return passBytes, nil
+	return &passBytes, nil
 }
 
 // createCharsets creates the password generator's charset based on the options passed in

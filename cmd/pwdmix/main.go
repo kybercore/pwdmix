@@ -22,6 +22,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("%s\n", generatedPassword)
-	utils.OverwriteMemory(&generatedPassword)
+	fmt.Printf("%s\n", *generatedPassword)
+	utils.OverwriteMemory(generatedPassword)
 }
